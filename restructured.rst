@@ -23,4 +23,3 @@ Products
 for Comparison you can cheak out this websites, like `Comparison
 <https://www.xda-developers.com/dell-xps-15-2023-vs-surface-laptop-5/>`_.
 
-`home <index1.html>`_
