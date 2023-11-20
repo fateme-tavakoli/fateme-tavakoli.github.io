@@ -1,89 +1,66 @@
-<!DOCTYPE html>
-<html dir="ltr"><head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="index1_files/style.css">
-    
-    </head><body><div class="container">
-      <div class="home">
-        <ul>
-          <li><a>
-            Home
-          </a></li>
-          <li>
-            <a href="file:///C:/Users/iTTaste/Desktop/rst/Output.html">
-              Introduction
-            </a>
-          </li>
-          <li><a href="page3.html">
-            Buy
-          </a>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="adverts">add
-      <p class="add-1">
-        
-       
-        
-          <img src="index1_files/offer.jfif" alt="offer" usemap="#offer" width="150px" height="150px">
-          </p><li><a href="https://depositphotos.com/61947773/stock-illustration-sale-markdown-discount-20-percent.html">offer
-          </a></li>
-          <img src="index1_files/keyboard.jpg" width="150px" height="150px">
-          <li><a href="https://epomaker.com/products/epomaker-th80">best keyboard for you pc
-          </a></li>
-          <img src="index1_files/headphones.webp" width="150px" height="150px">
-          <li><a href="https://electronics.sony.com/audio/headphones/headband/p/wh1000xm4-b">Sony WH-1000XM4
-          </a></li>
-
-
-      <p></p>
-    </div>
-
-      <div class="Products"><h2>Products</h2>
-        <p class="item-1">
-
-          Size  15.6"
-          Operating System  Windows 11
-          The Dell XPS 15 (2023) is a high-end Windows mobile 
-workstation. This 9530 model replaces the Dell XPS 15 9520 from 2022. 
-Its external design is identical to its predecessor, as only the 
-internal components have changed. It's available with an Intel 13th Gen 
-Core i5, i7, or i9 H-series CPU with up to 64GB of RAM and up to 8TB of 
-storage.</p>
-      <p class="image-1">
-       
-          <img src="download.jpg" width="400px" height="200px" alt="Laptop" usemap="#laptap" />
-          <map name="laptap">
-              <area shape="rect" coords="22,33,230,360" alt="laptap"
-                  href="https://www.dell.com/en-us/shop/dell-laptops/xps-15-laptop/spd/xps-15-9530-laptop" />
-      </p>
-    
-      <p class="item-2">
-        The Microsoft Surface Laptop 5 is the company's latest laptop 
-computer developed to supersede the Surface Laptop 4. The device was 
-announced on October 12, 2022 introducing 2 new colors and alongside the
- Surface Pro 9 and Surface Studio 2 Plus. The laptop is powered by the 
-new Windows 11 operating system with the 2022 update and the 12th 
-generation Intel Core processors.
-    </p>
-    <p class="image-2">
-      <img src="Surface Laptop 5.jpg" width="400px" height="200px" alt="laptap2" usemap="#laptap2" />
-      <map name="laptap2">
-          <area shape="rect" coords="36,40,250,310" alt="laptap2"
-              href="https://www.microsoft.com/en-us/d/surface-laptop-5/8xn49v61s1bn" /></p> </div>
-      <div class="info">more information
-        <ol>
-            <li><a href="https://www.dell.com/en-us/shop/dell-laptops/xps-15-laptop/spd/xps-15-9530-laptop">Dell XPS 15
-                    2023</a></li>
-            <li><a href="https://www.microsoft.com/en-us/d/surface-laptop-5/8xn49v61s1bn">Surface Laptop 5</a></li>
-            <li><a href="page2.html">
-              Comparison</a></li>
-
-        </ol>
-      </div>
-    </map>
-  </map>
-    
-      
-</div></body></html>
+<style>
+    .item1 {
+      background: LightSkyBlue;
+      grid-area: header;
+    }
+  
+    .item2 {
+      background: LightSalmon;
+      grid-area: advert;
+    }
+  
+    .item3 {
+      background: PaleTurquoise;
+      grid-area: content;
+    }
+  
+    .item4 {
+      background: lightpink;
+      grid-area: footer;
+    }
+  
+    .container {
+      font-size: 50em;
+      min-height: 300px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50px auto 1fr auto;
+      grid-gap: 10px;
+      grid-template-areas:
+        "header"
+        "advert"
+        "content"
+        "footer";
+    }
+  
+    @media (min-width: 300px){
+      .container{
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+          "advert header"
+          "advert content"
+          "advert footer";
+      }
+    }
+  
+    @media (min-width: 400px){
+      .container{
+        grid-template-areas:
+        /* Only change code below this line */
+          "advert header"
+          "advert content"
+          "advert footer";
+        /* Only change code above this line */
+      }
+    }
+  </style>
+  
+  <div class="container">
+    <div class="item1">header</div>
+    <div class="item2">advert</div>
+    <div class="item3">content</div>
+    <div class="item4">footer</div>
+  </div>
