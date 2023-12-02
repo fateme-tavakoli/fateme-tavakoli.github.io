@@ -20,6 +20,9 @@ Products
    Multitasking speed powered by 12th Gen Intel® Core™ i5/i7 processors built on the Intel® Evo™ platform, with Windows 11 and a vibrant touchscreen. Sleek and beautiful, in your choice of size.¹ And battery life² for real life to do your thing your way all day. Surface Laptop 5 gives you the perfect balance to do it all.
 
 
+
+
 for Comparison you can cheak out this websites, like `Comparison
 <https://www.xda-developers.com/dell-xps-15-2023-vs-surface-laptop-5/>`_.
 
+`home <index.html>`_

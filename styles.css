@@ -1,5 +1,8 @@
+.table{
+  background-color: beige;
+}
 
-      .home {
+       .home {
         background: rgb(83, 82, 82);
         grid-area: header;
       }
@@ -37,6 +40,7 @@
           ""
           "Products"
           "info";
+         
       }
     
       @media (min-width: 300px){
