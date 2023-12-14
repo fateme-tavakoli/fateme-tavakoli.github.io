@@ -25,5 +25,23 @@
         <button type="button" onclick="funcjs()"> Click Me for sending message </button>  
         </form> 
         <a href="index.html">home</a>  
+        <button onclick="myFunc()">
+            Click here
+        </button>
+     
+        <h4 id="GFG" style="color:rgb(47, 67, 70);"></h4>
+     
+        <script>
+            let result = document.getElementById("GFG");
+     
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+     
+            function myFunc() {
+                changeColor('grey');
+                result.innerHTML = "Background Color changed";
+            }        
+        </script>
 
 </body></html> 

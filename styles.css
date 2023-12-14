@@ -1,25 +1,29 @@
-.table{
-  background-color: beige;
-}
+
 
        .home {
-        background: rgb(83, 82, 82);
+        background: #535252;
         grid-area: header;
+        
+        
+        
       }
     
       .Products {
         background: rgb(93, 115, 123);
         grid-area: content-start;
+       
       }
     
       .adverts {
         background: rgb(68, 77, 77);
         grid-area: advert;
+      
       }
     
       .info {
         background: grey;
         grid-area: footer;
+   
       }
       .item-1{
         background: grey;
@@ -43,7 +47,7 @@
          
       }
     
-      @media (min-width: 300px){
+      @media screen and (min-width: 300px){
         .container{
           grid-template-columns: auto 1fr;
           grid-template-rows: auto 1fr auto;

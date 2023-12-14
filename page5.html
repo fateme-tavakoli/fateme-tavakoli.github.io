@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Input Form</title>
+</head>
+<body style="background-color: rgb(105, 154, 163);">
+
+<h2>Enter your information:</h2>
+
+<form id="infoForm">
+Name: <input type="text" id="name"><br>
+phonenumber: <input type="number" id="phonenumber"><br>
+Email: <input type="email" id="email"><br><br>
+
+<input type="button" value="Submit" onclick="createObject()">
+</form>
+
+<p id="displayInfo"></p>
+
+<script>
+function createObject() {
+var name = document.getElementById("name").value;
+var phonenumber = document.getElementById("phonenumber").value;
+var email = document.getElementById("email").value;
+
+var userInfo = {
+name: name,
+phonenumber: phonenumber,
+email: email,
+
+
+};
+
+var display = document.getElementById("displayInfo");
+display.innerHTML = "User Information:<br>Name: " + userInfo.name + "<br>phonenumber: " + userInfo.phonenumber + "<br>Email: " + userInfo.email;
+
+}
+</script>
+<a href="index.html">home</a> 
+</body>
+</html>
